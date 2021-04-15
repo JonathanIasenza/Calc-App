@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <script src="calc.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="init();"><div class="animate__animated animate__fadeIn animate__delay-1s">
+            <div class="calculadora">
+                <div class="output">
+                    <span  id="resultado" placeholder="0" readonly="true" />
+                </div>
+                <button class="numero" id="uno" value="1">1</button>
+                <button class="numero" id="dos" value="2">2</button>
+                <button class="numero" id="tres" value="3">3</button>
+                <button id="suma" value="+">+</button>
+                <button class="numero" id="cuatro" value="4">4</button>
+                <button class="numero" id="cinco" value="5">5</button>
+                <button class="numero" id="seis" value="6">6</button>
+                <button id="resta" value="-" onclick="resta()">-</button>
+                <button class="numero" id="siete" value="7">7</button>
+                <button class="numero" id="ocho" value="8">8</button>
+                <button class="numero" id="nueve" value="9">9</button>
+                <button id="division" value="/" onclick="division()">/</button>
+                <button id="reset" onClick="borrar()">C</button>
+                <button class="numero" id="cero" value="0">0</button>
+                <button onclick="resultado()">=</button>
+                <button id="multiplicacion" value="*">*</button>
+            </div>
+        </div>
+            <script>borrar();</script>
+    </body>
+</html>
